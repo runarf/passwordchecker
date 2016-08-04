@@ -1,0 +1,20 @@
+Runars Password Checker
+
+How to use it
+-------------
+
+The program requires that a MYSQL server is running with a database. Run the "passwords.sql" source file in this database.
+
+To run the program use:
+php PasswordChecker.php "mysqlIP" "mysqlPort" "dbname" "dbuser" "dbpassword" "passwordRulesFile"
+
+For example with following conditions:
+-database located on: localhost
+-port: 3306
+-name of database :"testdatabase"
+-user: "user1"
+-password: "password123"
+-yaml file with password rules: "rules.yml"
+
+Run the program with the following:
+php PasswordChecker.php localhost 3306 testdatabase user1 password123 rules.yml
