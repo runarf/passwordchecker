@@ -1,0 +1,8 @@
+- regex: ^(?!.*([A-Za-z])\1{2})
+  error: "Please dont use more than two repeating letters"
+- regex: (?=.*\d)
+  error: "Please use a number"
+- regex: (?=.*([A-Z]|[$&+,:;=?@#|'<>.^*()%!-]))
+  error: "Please use a capital letter or a special character"
+- regex: (?=[A-Za-z0-9$&+,:;=?@#|\'<>.^*()%!-]{5,})
+  error: "Please use at least 5 characters in your password"
